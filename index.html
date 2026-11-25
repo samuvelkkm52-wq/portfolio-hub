@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="particles"></canvas>
+  <div class="cursor-glow"></div>
+
+  <!-- INTRO -->
+  <div id="intro">
+    <canvas id="introCanvas"></canvas>
+    <p class="skip">click to skip</p>
+  </div>
+
+  <!-- HERO -->
+  <main id="hero">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="hero-content">
+      <p class="hello">Welcome to our</p>
+      <h2 class="name" aria-label="Portfolio Hub"><canvas id="titleCanvas"></canvas></h2>
+      <p class="role">College Student Showcase</p>
+      <p class="tagline">Discover projects, skills and portfolios built by our students.</p>
+      <div class="buttons">
+        <a href="#students" class="btn primary">Explore Portfolios</a>
+        <a href="#" id="submitBtn" class="btn ghost" target="_blank" rel="noopener">Add Yours</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- STUDENTS -->
+  <section id="students">
+    <h3 class="section-title reveal">Student Portfolios</h3>
+    <p class="section-sub reveal">Swipe, search and visit the portfolios</p>
+
+    <input id="search" class="search reveal" type="text" placeholder="🔍  Search name, department or skill...">
+
+    <div class="slider-wrap reveal">
+      <button class="arrow" id="prev" aria-label="Previous">&#8249;</button>
+      <div class="slider" id="slider"></div>
+      <button class="arrow" id="next" aria-label="Next">&#8250;</button>
+    </div>
+    <p id="empty" class="empty">No student found 😅</p>
+  </section>
+
+  <footer class="footer">Made with 💙 by college students</footer>
+
+  <script src="students.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
